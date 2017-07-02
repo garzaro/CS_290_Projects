@@ -13,7 +13,7 @@ th, td {
  
 tfoot.Footer {
    text-align: center;
-   background: #b3d9ff;
+   background: #D1E7F9;
 } 
 
 th {
@@ -28,6 +28,7 @@ th {
 th.ital{
   font-weight: normal;
   font-style: italic;
+  background-color: #D2D1D1;
 }
 
 tr.even {
@@ -38,7 +39,23 @@ tr.odd {
   background-color: #4da6ff;
   }
   
+  
+tr.headers {
+  background-color: #D2D1D1;
+}
 td:hover {
   background-color: #b3b3ff;
   color: #ffffff;
   }
+  
+div.outer-content {
+  background-color: #FAB1EA;
+  width: %75; 
+  padding: 20px;
+}
+
+div.inner-content {
+  background-color: #E7F5FA; 
+  width: %75;
+  position: center;
+}
