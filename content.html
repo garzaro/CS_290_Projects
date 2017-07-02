@@ -9,6 +9,7 @@
  
  <body>
   <table>
+
   <tr class="even">
     <th></th>
     <th scope="Col">Sunday</th>
@@ -17,6 +18,7 @@
     <th scope="Col">Wednesday</th>
     <th scope="Col">Thursday</th>
   </tr>
+
   <tr class="odd">
     <th scope="row" class="ital">Exercise</th>
     <td>Run</td>
@@ -25,6 +27,7 @@
     <td>Weights</td>
     <td>Run</td>
   </tr>
+
   <tr class="even">
     <th class="ital" scope="row" >Breakfast</th>
     <td>Kashi</td>
@@ -33,6 +36,7 @@
     <td>Smoothie</td>
     <td>Kashi</td>
   </tr>
+
   <tr class="odd">
     <th class="ital" scope="row">Lunch</th>
     <td>Sardines</td>
@@ -41,6 +45,7 @@
     <td>Sardines</td>
     <td>Leftovers</td>
   </tr>
+
   <tr class="even">
     <th scope="row" class="ital">Dinner</th>
     <td>Burrito</td>
@@ -49,6 +54,7 @@
     <td>Tears</td>
     <td>Burrito</td>
   </tr>
+
   <tr class = "odd">
     <th scope="row" class="ital">Leisure</th>
     <td>Book</td>
@@ -57,12 +63,15 @@
     <td>Book</td>
     <td>Call Family</td>
   </tr>
+
   <tfoot class="Footer">
     <td colspan="2"> foot 1</td>
     <td colspan="4"> foot 2</td>
   </tfoot>
-</table>
-  <ol>
+
+ </table>
+ 
+ <ol>
    <li>This is 1!</li> 
    <li>Here is 2..</li>  
      <ul>
@@ -70,44 +79,62 @@
       <li>2nd Pow</li>
      </ul>
    <li>BAM, 3</li> 
-  </ol>
-  <div class="outer-content">
-   <div class="inner-content">
-    Well, hello there...
-   </div>
+ </ol>
+
+ <div class="outer-content">
+  <div class="inner-content">
+   Well, hello there...
   </div>
-  <br />
-  <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+ </div>
+ <br />
+  
+ <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
     <fieldset>
         <legend>Get Form:</legend>
         <label>Text Here:
             <input type="text" name="text_input" size="30" maxlength="100">
         </label>
+
         <br />
+
         <label>Number Here:
             <input type="number" name="numerical_input" size="30" maxlength="100">
         </label>
+
         <br />
+
         <label>Password here:
             <input type="password" name="password_input" size="30" maxlength="100">
         </label>
+        
+	<br />
+
         <br />
-        <br />
-        Which one of these do you want to check?
-        <br />
-        <label>
+        
+	Which one of these do you want to check?
+        
+	<br />
+        
+	<label>
           <input type="radio" name="candy" value="snickers"/>Snickers
         </label>
-        <br />
-        <label>
+        
+	<br />
+        
+	<label>
           <input type="radio" name="candy" value="skittles" />Skittles
         </label>
-        <br />
-        <label>
-          <input type="radio" name="candy" value="mentos" />Maybe
+        
+	<br />
+        
+	<label>
+          <input type="radio" name="candy" value="mentos" />Mentos
         </label>
-        <br />
-        <input type="submit" value="Send it off" />
+        
+	<br />
+        
+	<input type="submit" value="Send it off" />
+    
     </fieldset>
   </form>
   
@@ -116,34 +143,49 @@
   <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
     <fieldset>
         <legend>Post Form:</legend>
-        <label>Text Here:
+        
+	<label>Text Here:
             <input type="text" name="text_input" size="30" maxlength="100">
         </label>
-        <br />
-        <label>Number Here:
+        
+	<br />
+        
+	<label>Number Here:
             <input type="number" name="numerical_input" size="30" maxlength="100">
         </label>
-        <br />
-        <label>Password here:
+        
+	<br />
+        
+	<label>Password here:
             <input type="password" name="password_input" size="30" maxlength="100">
         </label>
-        <br />
-        <br />
-        Which one of these do you want to check?
-        <br />
-        <label>
+        
+	<br />
+        
+	<br />
+        
+	Which one of these do you want to check?
+        
+	<br />
+        
+	<label>
           <input type="radio" name="candy" value="snickers"/>Snickers
         </label>
-        <br />
-        <label>
+        
+	<br />
+        
+	<label>
           <input type="radio" name="candy" value="skittles" />Skittles
         </label>
-        <br />
+        
+	<br />
         <label>
-          <input type="radio" name="candy" value="mentos" />Maybe
+          <input type="radio" name="candy" value="mentos" />Mentos
         </label>
-        <br />
-        <input type="submit" value="Send it off" />
+        
+	<br />
+        
+	<input type="submit" value="Send it off" />
     </fieldset>
   </form>
  </body>
