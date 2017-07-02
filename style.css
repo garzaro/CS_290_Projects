@@ -58,5 +58,6 @@ div.outer-content {
 div.inner-content {
   background-color: #E7F5FA; 
   width: 75%;
+  text-align: center;
   position: center;
 }
