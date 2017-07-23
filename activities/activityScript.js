@@ -9,7 +9,7 @@ function bindButtons(){
 	    if(req.status >= 200 && req.status < 400){
 		var response = JSON.parse(req.responseText);
 		document.getElementById('cityName').textContent = response.name;
-		document.getElementById('temp').textContent = response.main.temp + 'F';
+		document.getElementById('temp').textContent = response.main.temp + 'K';
 		document.getElementById('hum').textContent = response.main.humidity + '%';
 	    }
 	    else{
@@ -28,20 +28,18 @@ function bindButtons(){
 	var full = city +',' + state;
 	var req = new XMLHttpRequest();
 	req.open('Get', 'http://api.openweathermap.org/data/2.5/weather?q=' + full  + '&appid=fa7d80c48643dfadde2cced1b1be6ca1', true)
-	var response = JSON.parse(req.responseText);
-	if(response.name.toLowerCase()!=city){
-	    alert('CITY NOT FOUND');
-	}
-	else{
-	    document.getElementById('cityName').textContent = response.name;
-	    document.getElementById('temp').textContent = response.main.temp + 'k';
-	    document.getElementById('hum').textContent = response.main.humidity + '%';
-	}	req.addEventListener('load', function(){
+
+	req.addEventListener('load', function(){
 	    if(req.status >= 200 && req.status < 400){
 		var response = JSON.parse(req.responseText);
-		document.getElementById('cityName').textContent = response.name;
-		document.getElementById('temp').textContent = response.main.temp + 'F';
-		document.getElementById('hum').textContent = response.main.humidity + '%';
+		if(response.name.toLowerCase()!=city){
+		    alert('City Not Found');
+		}
+		else{
+		    document.getElementById('cityName').textContent = response.name;
+		    document.getElementById('temp').textContent = response.main.temp + 'K';
+		    document.getElementById('hum').textContent = response.main.humidity + '%';
+		}
 	    }
 	    else{
 		console.log("error in network request:" + req.statusText);
