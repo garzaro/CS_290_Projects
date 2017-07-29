@@ -1,4 +1,4 @@
-#Requirements
+# Requirements
 
 This week you will write single page web application that will receive incoming POST and GET requests.
 
@@ -8,7 +8,7 @@ Below that,  create either a list or a table which clearly shows all parameter n
 
 If it is a POST request, you should list all the property names and values that were received in the request body. It should be able to accepter either a well formatted URL encoded query string (x-www-form-urlencoded) or JSON data.
 
-#Deliverables
+# Deliverables
 
 
 You should submit a single zip file containing all of your source code.
