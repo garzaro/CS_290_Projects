@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express(); 
-var handlebars = require('express-handlebars').create({default9
+var handlebars = require('express-handlebars').create({defaultLayout:'template'});
 var bodyParser = require('body-parser');
 
 app.use(bodyParserurlencoded({extended: false}));
@@ -11,7 +11,7 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 62521); 
 
-app.get('/show-data', function(req, res){
+app.get('/check', function(req, res){
 	var qParams = []; 
 	for (var p in req.query){
 		qParams.push({'name':p,'value':req.query[p]})
@@ -23,10 +23,10 @@ app.get('/show-data', function(req, res){
 	var t = document.createTextNode("GET Request Received"); 
 	h.appendChild(t); 
 
-	res.render('show-data', context); 
+	res.render('check', context); 
 });
 
-app.post('/show-data', function(req, res){
+app.post('/check', function(req, res){
 
 	var qParams = []; 
 
@@ -35,9 +35,9 @@ app.post('/show-data', function(req, res){
 	}
 	console.log(qParams);
 	console.log(req.body); 
-	var context = { title: "POST Request Received")}
+	var context = { title: "POST Request Received"}
 	context.dataList = qParams; 
-	res.render('show-data', context);
+	res.render('check', context);
 });
 
 app.use(funciton(req,res){
